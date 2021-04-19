@@ -72,3 +72,20 @@
 // alert(`petitNombres = ${petitNombres} ` + `grandNombres = ${grandNombres}`);
 
 //8
+alert("Dans les prompts qui suivent, rentrez d'abord un int, ensuite un string, et enfin un booleen");
+let x = prompt("Valeur 1: ");
+let y = prompt("Valeur 2: ");
+let z = prompt("Valeur 3: ");
+
+x = Number(x);
+z = Boolean(z);
+
+let list = [];
+list.push(x,y,z);
+
+if (typeof(list[0]) === "number" && typeof(list[1]) === "string" && typeof(list[2]) === "boolean") {
+    alert("Quelle bonne mémoire");
+}
+else {
+    alert("Tu fumes trop");
+}
